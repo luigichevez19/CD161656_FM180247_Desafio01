@@ -136,10 +136,25 @@
     <Compile Include="Migrations\202109181925351_cliente_tipocuenta.Designer.cs">
       <DependentUpon>202109181925351_cliente_tipocuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109181932339_cuentabancaria.cs" />
+    <Compile Include="Migrations\202109181932339_cuentabancaria.Designer.cs">
+      <DependentUpon>202109181932339_cuentabancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109181935358_tipotransaccion.cs" />
+    <Compile Include="Migrations\202109181935358_tipotransaccion.Designer.cs">
+      <DependentUpon>202109181935358_tipotransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109181942236_transaccion.cs" />
+    <Compile Include="Migrations\202109181942236_transaccion.Designer.cs">
+      <DependentUpon>202109181942236_transaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Banco.cs" />
     <Compile Include="Models\cliente.cs" />
+    <Compile Include="Models\CuentaBancaria.cs" />
     <Compile Include="Models\TipoCuentaBancaria.cs" />
+    <Compile Include="Models\TipoTransaccion.cs" />
+    <Compile Include="Models\transacciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +213,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109181925351_cliente_tipocuenta.resx">
       <DependentUpon>202109181925351_cliente_tipocuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109181932339_cuentabancaria.resx">
+      <DependentUpon>202109181932339_cuentabancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109181935358_tipotransaccion.resx">
+      <DependentUpon>202109181935358_tipotransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109181942236_transaccion.resx">
+      <DependentUpon>202109181942236_transaccion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

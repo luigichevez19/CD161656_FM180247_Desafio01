@@ -19,6 +19,10 @@ namespace CD161656_FM180247_Desafio01.Models
         }
         public virtual DbSet<cliente> Clientes { get; set; }
         public virtual DbSet<TipoCuentaBancaria> TipoCuentaBancarias{ get; set; }
+        public virtual DbSet<CuentaBancaria> CuentaBancarias { get; set; }
+        public virtual DbSet<TipoTransaccion> TipoTransaccions { get; set; }
+        public virtual DbSet<transacciones> Transacciones { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
