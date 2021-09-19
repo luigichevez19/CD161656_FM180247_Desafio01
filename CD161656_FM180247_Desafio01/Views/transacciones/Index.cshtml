@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CD161656_FM180247_Desafio01.Models.transacciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped">
+   <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Monto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaTransaccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaAplicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idCuentaBancaria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoTransaccion)
+        </th>
+        <th></th>
+    </tr>
+</thead>
+@foreach (var item in Model) {
+  
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Monto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaTransaccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaAplicacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCuentaBancaria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoTransaccion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.id }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

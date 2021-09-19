@@ -1,0 +1,26 @@
+﻿@model CD161656_FM180247_Desafio01.Models.TipoTransaccion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipoTransaccion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_transaccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_transaccion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

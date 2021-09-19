@@ -1,0 +1,66 @@
+﻿@model CD161656_FM180247_Desafio01.Models.transacciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>transacciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaTransaccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaTransaccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaAplicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaAplicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idCuentaBancaria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCuentaBancaria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoTransaccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoTransaccion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
